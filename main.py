@@ -27,7 +27,7 @@ def createQRCode(level, jp, eng, reading):
     draw_w, draw_h = draw.textsize(jp, font=font)
     draw.text((IMG_WIDTH / 2 - draw_w / 2, 10), jp, fill=(255,0,0), font=font)
 
-    font = ImageFont.truetype("/Library/Fonts/Arial Unicode.ttf", 10)
+    font = ImageFont.truetype("/Library/Fonts/Arial Unicode.ttf", 20)
     draw_w, draw_h = draw.textsize(eng, font=font)
     draw.text((IMG_WIDTH - draw_w - 5, IMG_HEIGHT - draw_h - 5), eng, fill=(0,0,0), font=font)
 
