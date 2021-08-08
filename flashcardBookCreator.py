@@ -1,6 +1,6 @@
+import os, helper
 from PIL import Image
 from datetime import datetime
-import helper, os
 
 class FlashcardBookCreator:
     def __init__(self):
