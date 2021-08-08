@@ -38,12 +38,12 @@ class QrCodeMaker(FlashcardMaker):
         # Draw the vocabulary onto the image
         draw = ImageDraw.Draw(img)
         self._drawText(draw, jp, 100, IMG_WIDTH / 2, 10, ImagePivot.centre, (255, 0, 0))
-        self._drawText(draw, eng, 20, IMG_WIDTH / 2 - 5, IMG_HEIGHT - 25, ImagePivot.right, (0, 0, 0))
+        self._drawText(draw, eng, 20, IMG_WIDTH - 10, IMG_HEIGHT - 30, ImagePivot.right, (0, 0, 0))
 
         # Draw the reading onto the image
         if(reading != ""):
             pr = "({0})".format(reading)
-            self._drawText(draw, pr, 30, IMG_WIDTH / 2, 140, ImagePivot.centre, (255, 0, 0))
+            self._drawText(draw, pr, 40, IMG_WIDTH / 2, 150, ImagePivot.centre, (255, 0, 0))
 
         self._drawBorder(draw)        
 
